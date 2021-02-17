@@ -42,6 +42,6 @@ app.post("/", (req, res) => {
     res.redirect("/cities/" + _.kebabCase(cityName));
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("The server is running on port 3000");
 });
